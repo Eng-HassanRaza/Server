@@ -1,0 +1,60 @@
+
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+</head>
+
+<section class="container">
+  <div class="dropdown">
+    <select name="one" class="dropdown-select" id="option">
+      <option value="">Select…</option>
+      <option value="1">Books</option>
+      <option value="2">Games </option>
+      <option value="3">Movies</option>
+    </select>
+  </div>
+  <div class="dropdown dropdown-dark">
+    <select name="two" class="dropdown-select" id="arg">
+      <option value="">Select…</option>
+      <option value="1">-r</option>
+      <option value="2">-m</option>
+    </select>
+  </div>
+</section>
+ <center>
+   <button style="width:120px;height:60px;" onclick="onButtonClick()" >RUN</button>
+ </center>
+
+<script>
+	function sendRequest(name){
+		let request = new XMLHttpRequest();
+		request.open("GET",'http://127.0.0.1:5000/work/'+name,true);
+		request.send();
+	}
+
+	function onButtonClick(){
+		let elem = document.getElementById("option");
+		if(elem.selectedIndex == 0){
+			alert("please choose smthng !");
+			return;
+		}
+
+		let option = elem.options[elem.selectedIndex].text;
+		
+		elem = document.getElementById("arg");
+		if(elem.selectedIndex == 0){
+			alert("please choose smthng !");
+			return;
+		}
+
+		arg = elem.options[elem.selectedIndex].text;
+
+		if(arg == "-r")
+			sendRequest(option.toLowerCase());
+		else
+			sendRequest(option.toLowerCase()+"s");
+
+		alert("work on progress !")
+
+	}
+</script>
