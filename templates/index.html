@@ -1,60 +1,288 @@
+<html>
+	<head>
+		<title>New Layout</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<style>
+			.container{
+				width:95%;
+				height:100%;
+				margin:20px auto;
+			}
 
-<head>
-    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+			.hdr_row{
+			border-bottom:1px solid black;
+			}
+			.col-sm-4{
+				text-align:center;
+				line-height:40px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+		  <div class="row hdr_row">
+				<div class="col-sm-4">
+				  Selling Site
+				</div>
+				<div class="col-sm-4">
+				  Buying Site
+				</div>
+				<div class="col-sm-4">
+				  Action
+				</div>
+		  </div>
+		  <h4>Rebuy</h4>
+		  <div class="panel panel-default">
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-sm-4">
+					  <p>RB_Books</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="col-sm-6">
+							<label><input type="checkbox" value="">Momox</label>
+						</div>
+						<div class="col-sm-6">
+							<label><input type="checkbox" value="">Sellorado</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<button type="button" class="btn btn-default">Start</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+					  <p>RB_Films</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="col-sm-6">
+							<label><input type="checkbox" value="">Momox</label>
+						</div>
+						<div class="col-sm-6">
+							<label><input type="checkbox" value="">Sellorado</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<button type="button" class="btn btn-default">Start</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+					  <p>RB_Music</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="col-sm-6">
+							<label><input type="checkbox" value="">Momox</label>
+						</div>
+						<div class="col-sm-6">
+							<label><input type="checkbox" value="">Sellorado</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<button type="button" class="btn btn-default">Start</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+					  <p>RB_Games</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="col-sm-6">
+							<label><input type="checkbox" value="">Momox</label>
+						</div>
+						<div class="col-sm-6">
+							<label><input type="checkbox" value="">Sellorado</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<button type="button" class="btn btn-default">Start</button>
+					</div>
+				</div>
 
-</head>
+			</div>
+		  </div>
+		  <h4>Medimops</h4>
+		  <div class="panel panel-default">
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-sm-4">
+					  <p>MM_Books</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="col-sm-6">
+							<label><input type="checkbox" value="">Rebuy</label>
+						</div>
+						<div class="col-sm-6">
+							<label><input type="checkbox" value="">Sellorado</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<button type="button" class="btn btn-default">Start</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+					  <p>MM_Films</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="col-sm-6">
+							<label><input type="checkbox" value="">Rebuy</label>
+						</div>
+						<div class="col-sm-6">
+							<label><input type="checkbox" value="">Sellorado</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<button type="button" class="btn btn-default">Start</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+					  <p>MM_Music</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="col-sm-6">
+							<label><input type="checkbox" value="">Rebuy</label>
+						</div>
+						<div class="col-sm-6">
+							<label><input type="checkbox" value="">Sellorado</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<button type="button" class="btn btn-default">Start</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+					  <p>MM_Games</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="col-sm-6">
+							<label><input type="checkbox" value="">Rebuy</label>
+						</div>
+						<div class="col-sm-6">
+							<label><input type="checkbox" value="">Sellorado</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<button type="button" class="btn btn-default">Start</button>
+					</div>
+				</div>
 
-<section class="container">
-  <div class="dropdown">
-    <select name="one" class="dropdown-select" id="option">
-      <option value="">Select…</option>
-      <option value="1">Books</option>
-      <option value="2">Games </option>
-      <option value="3">Movies</option>
-    </select>
-  </div>
-  <div class="dropdown dropdown-dark">
-    <select name="two" class="dropdown-select" id="arg">
-      <option value="">Select…</option>
-      <option value="1">-r</option>
-      <option value="2">-m</option>
-    </select>
-  </div>
-</section>
- <center>
-   <button style="width:120px;height:60px;" onclick="onButtonClick()" >RUN</button>
- </center>
+			</div>
+		  </div>
+		  <h4>Buyzoxs</h4>
+		  <div class="panel panel-default">
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-sm-4">
+					  <p>BZ_Books</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="col-sm-4">
+							<label><input type="checkbox" value="">Momox</label>
+						</div>
+						<div class="col-sm-4">
+							<label><input type="checkbox" value="">Rebuy</label>
+						</div>
+						<div class="col-sm-4">
+							<label><input type="checkbox" value="">Sellorado</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<button type="button" class="btn btn-default">Start</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+					  <p>BZ_Films</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="col-sm-4">
+							<label><input type="checkbox" value="">Momox</label>
+						</div>
+						<div class="col-sm-4">
+							<label><input type="checkbox" value="">Rebuy</label>
+						</div>
+						<div class="col-sm-4">
+							<label><input type="checkbox" value="">Sellorado</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<button type="button" class="btn btn-default">Start</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+					  <p>BZ_Music</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="col-sm-4">
+							<label><input type="checkbox" value="">Momox</label>
+						</div>
+						<div class="col-sm-4">
+							<label><input type="checkbox" value="">Rebuy</label>
+						</div>
+						<div class="col-sm-4">
+							<label><input type="checkbox" value="">Sellorado</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<button type="button" class="btn btn-default">Start</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+					  <p>BZ_Games</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="col-sm-4">
+							<label><input type="checkbox" value="">Momox</label>
+						</div>
+						<div class="col-sm-4">
+							<label><input type="checkbox" value="">Rebuy</label>
+						</div>
+						<div class="col-sm-4">
+							<label><input type="checkbox" value="">Sellorado</label>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<button type="button" class="btn btn-default">Start</button>
+					</div>
+				</div>
 
-<script>
-	function sendRequest(name){
-		let request = new XMLHttpRequest();
-		request.open("GET",'http://127.0.0.1:5000/work/'+name,true);
-		request.send();
-	}
+			</div>
+		  </div>
+		  <div class="container">
+		  <h4>Scraper Report</h4>
+		  <table class="table table-striped">
+			<thead>
+			  <tr>
+				<th>Spider</th>
+				<th>Start Time</th>
+				<th>End Time</th>
+				<th>Duration</th>
+				<th>Item Scraped</th>
+				<th>Performance</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>BZ_Books</td>
+				<td>10:26</td>
+				<td>10:39</td>
+				<td>13 minutes</td>
+				<td>229</td>
+				<td>3 /s</td>
+			  </tr>
+			</tbody>
+		  </table>
+		</div>
 
-	function onButtonClick(){
-		let elem = document.getElementById("option");
-		if(elem.selectedIndex == 0){
-			alert("please choose smthng !");
-			return;
-		}
-
-		let option = elem.options[elem.selectedIndex].text;
-		
-		elem = document.getElementById("arg");
-		if(elem.selectedIndex == 0){
-			alert("please choose smthng !");
-			return;
-		}
-
-		arg = elem.options[elem.selectedIndex].text;
-
-		if(arg == "-r")
-			sendRequest(option.toLowerCase());
-		else
-			sendRequest(option.toLowerCase()+"s");
-
-		alert("work on progress !")
-
-	}
-</script>
+		</div>
+	</body>
+</html>
